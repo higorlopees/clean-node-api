@@ -1,4 +1,6 @@
-export default {
+import type { Config } from '@jest/types'
+
+const config: Config.InitialOptions = {
   roots: ['<rootDir>/src'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
@@ -11,3 +13,5 @@ export default {
     '.+\\.ts$': 'ts-jest'
   }
 }
+
+export default config
